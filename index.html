@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bùi Thị Bích Ngọc · Portfolio</title>
+  <meta name="description" content="Trang cá nhân của Bùi Thị Bích Ngọc, sinh viên ngành Địa lý học, Trường Đại học Sư phạm TP.HCM, định hướng nghiên cứu phát triển." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap&subset=vietnamese" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Bùi Thị Bích Ngọc</a>
+      <button class="nav-toggle" aria-label="Mở menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Trang chủ</a></li>
+          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          <li><a href="nghien-cuu.html">Nghiên cứu</a></li>
+          <li><a href="kinh-nghiem.html">Kinh nghiệm</a></li>
+          <li><a href="ky-nang.html">Kỹ năng</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <span class="eyebrow">Portfolio cá nhân</span>
+          <h1>Bùi Thị Bích Ngọc</h1>
+          <p class="subtitle">Sinh viên ngành Địa lý học · Định hướng Nghiên cứu Phát triển</p>
+          <p class="tagline">"Theo đuổi nghiên cứu vì giáo dục và cộng đồng."</p>
+          <div class="hero-cta">
+            <a href="lien-he.html" class="btn btn-primary">Liên hệ</a>
+            <a href="cv.pdf" class="btn btn-ghost" target="_blank" rel="noopener">Tải CV (PDF)</a>
+          </div>
+        </div>
+        <div class="hero-portrait reveal">
+          <div class="portrait-frame">
+            <img class="portrait-img" src="portrait.png" alt="Ảnh chân dung Bùi Thị Bích Ngọc" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ĐIỂM NHẤN NHANH ============ -->
+    <section class="page" style="padding-top: 12px;">
+      <div class="container">
+        <div class="card-grid">
+          <div class="card reveal">
+            <h3>Nghiên cứu khoa học</h3>
+            <p style="color: var(--text-soft); margin-top: 8px;">
+              Thành viên nhóm nghiên cứu về hỗ trợ hướng nghiệp cho trẻ em khuyết tật, dưới hướng dẫn của giảng viên Khoa Địa lý.
+            </p>
+            <a href="nghien-cuu.html" style="display:inline-block; margin-top:14px; font-weight:600;">Xem chi tiết →</a>
+          </div>
+          <div class="card reveal">
+            <h3>GIS &amp; Viễn thám</h3>
+            <p style="color: var(--text-soft); margin-top: 8px;">
+              Nền tảng vững về phân tích không gian, hệ thống thông tin địa lý (QGIS) và xử lý ảnh viễn thám (ENVI).
+            </p>
+            <a href="ky-nang.html" style="display:inline-block; margin-top:14px; font-weight:600;">Xem kỹ năng →</a>
+          </div>
+          <div class="card reveal">
+            <h3>Thành tích học tập</h3>
+            <p style="color: var(--text-soft); margin-top: 8px;">
+              Á khoa đầu vào ngành Địa lý học, Giải Nhì Tiếng Anh chuyên ngành, GPA học kỳ gần nhất 3.63/4.0.
+            </p>
+            <a href="kinh-nghiem.html" style="display:inline-block; margin-top:14px; font-weight:600;">Xem thành tích →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Bùi Thị Bích Ngọc</p>
+      <ul class="foot-links">
+        <li><a href="lien-he.html">Liên hệ</a></li>
+        <li><a href="cv.pdf" target="_blank" rel="noopener">Tải CV</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

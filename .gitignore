@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Thư mục công cụ / cấu hình Claude
+.claude/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Log & file tạm
+*.log
+*.tmp
+*.bak
+Thumbs.db
+
+# Dependencies (nếu sau này dùng)
+node_modules/
+CLAUDE.md
