@@ -1,0 +1,23 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo gà con Bích Ngọc">
+  <!-- tuft (chỏm lông đầu) -->
+  <path d="M32 19 C 30 13 34 12 34 18 M34 18 C 36 12 39 14 36 19 M30 19 C 27 14 30 12 31 18" stroke="#5E97C0" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <!-- body (tròn mập) -->
+  <ellipse cx="32" cy="37" rx="19" ry="18" fill="#86B6D8"/>
+  <!-- belly nhạt -->
+  <ellipse cx="32" cy="41" rx="12" ry="11" fill="#A9CDE6"/>
+  <!-- wings -->
+  <path d="M16 35 C 12 37 12 45 18 47 C 18 41 17 37 20 34 Z" fill="#5E97C0"/>
+  <path d="M48 35 C 52 37 52 45 46 47 C 46 41 47 37 44 34 Z" fill="#5E97C0"/>
+  <!-- eyes -->
+  <circle cx="26" cy="34" r="2.6" fill="#1F2E3D"/>
+  <circle cx="38" cy="34" r="2.6" fill="#1F2E3D"/>
+  <circle cx="26.9" cy="33.1" r="0.9" fill="#FFFFFF"/>
+  <circle cx="38.9" cy="33.1" r="0.9" fill="#FFFFFF"/>
+  <!-- cheeks -->
+  <circle cx="21" cy="39" r="2.4" fill="#F2A6A0" opacity="0.55"/>
+  <circle cx="43" cy="39" r="2.4" fill="#F2A6A0" opacity="0.55"/>
+  <!-- beak -->
+  <path d="M30 38 L 34 38 L 32 42 Z" fill="#F0B95A"/>
+  <!-- feet -->
+  <path d="M27 54 L 27 58 M24 59 L27 58 L30 59 M37 54 L37 58 M34 59 L37 58 L40 59" stroke="#F0B95A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

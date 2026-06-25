@@ -1,25 +1,25 @@
 /* =========================================================
    Website portfolio: Bùi Thị Bích Ngọc
-   Phong cách: thanh lịch tối giản, ấm áp tự nhiên
+   Phong cách: thanh lịch tối giản, tông xanh dương
    ========================================================= */
 
 :root {
-  --bg:           #FBF7F1;  /* nền chính: kem ấm */
-  --bg-alt:       #F3EBE1;  /* nền section xen kẽ: be nhạt */
+  --bg:           #F4F8FC;  /* nền chính: xanh trắng dịu */
+  --bg-alt:       #E6EFF7;  /* nền section xen kẽ: xanh nhạt */
   --surface:      #FFFFFF;  /* card/khối nổi */
-  --text:         #3E342B;  /* chữ chính: nâu đậm ấm */
-  --text-soft:    #7A6E62;  /* chữ phụ: nâu xám */
-  --accent:       #B07156;  /* điểm nhấn chính: nâu hồng đất */
-  --accent-soft:  #D8A98F;  /* nhấn nhạt */
-  --sage:         #8A9A7B;  /* xanh sage: nhấn phụ */
-  --sage-soft:    #C5CFBA;  /* sage nhạt */
-  --line:         #E4D8C9;  /* đường kẻ, viền nhạt */
+  --text:         #1F2E3D;  /* chữ chính: xanh navy đậm */
+  --text-soft:    #5A6C7E;  /* chữ phụ: xanh xám */
+  --accent:       #2F6FA6;  /* điểm nhấn chính: xanh dương */
+  --accent-soft:  #9FC3E0;  /* nhấn nhạt */
+  --sage:         #4F93B8;  /* xanh biển nhạt: nhấn phụ */
+  --sage-soft:    #C7DDEC;  /* xanh nhạt cho nền/đường kẻ */
+  --line:         #D6E3EF;  /* đường kẻ, viền nhạt */
 
   --maxw: 1080px;
   --radius: 16px;
   --radius-lg: 20px;
-  --shadow: 0 10px 30px rgba(62, 52, 43, 0.07);
-  --shadow-soft: 0 4px 14px rgba(62, 52, 43, 0.05);
+  --shadow: 0 10px 30px rgba(31, 46, 61, 0.07);
+  --shadow-soft: 0 4px 14px rgba(31, 46, 61, 0.05);
   --serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
   --sans: "Be Vietnam Pro", "Inter", system-ui, -apple-system, sans-serif;
 }
@@ -69,7 +69,7 @@ p { color: var(--text); }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(251, 247, 241, 0.85);
+  background: rgba(244, 248, 252, 0.85);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
@@ -85,14 +85,27 @@ p { color: var(--text); }
 }
 
 .nav-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  transition: transform 0.3s ease;
+}
+.nav-brand:hover .brand-logo { transform: rotate(-6deg) scale(1.06); }
+.brand-name {
   font-family: var(--serif);
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--text);
   letter-spacing: 0.5px;
-  white-space: nowrap;
+  transition: color 0.25s ease;
 }
-.nav-brand:hover { color: var(--accent); }
+.nav-brand:hover .brand-name { color: var(--accent); }
 
 .nav-links {
   display: flex;
@@ -167,7 +180,7 @@ p { color: var(--text); }
   box-shadow: var(--shadow-soft);
 }
 .btn-primary:hover {
-  background: #9a604a;
+  background: #245a89;
   color: #fff;
   transform: translateY(-2px);
 }
@@ -252,12 +265,12 @@ p { color: var(--text); }
 }
 .hero::before {
   width: 420px; height: 420px;
-  background: radial-gradient(circle, rgba(197,207,186,0.45), rgba(197,207,186,0) 70%);
+  background: radial-gradient(circle, rgba(159,195,224,0.50), rgba(159,195,224,0) 70%);
   top: -120px; right: -80px;
 }
 .hero::after {
   width: 320px; height: 320px;
-  background: radial-gradient(circle, rgba(216,169,143,0.35), rgba(216,169,143,0) 70%);
+  background: radial-gradient(circle, rgba(79,147,184,0.30), rgba(79,147,184,0) 70%);
   bottom: -110px; left: -70px;
 }
 
@@ -461,8 +474,8 @@ p { color: var(--text); }
   border-color: var(--accent-soft);
   color: var(--accent);
 }
-.chip.sage { background: var(--sage-soft); border-color: var(--sage-soft); color: #4d5a40; }
-.chip.accent { background: var(--accent-soft); border-color: var(--accent-soft); color: #5e3625; }
+.chip.sage { background: var(--sage-soft); border-color: var(--sage-soft); color: #1f5273; }
+.chip.accent { background: var(--accent-soft); border-color: var(--accent-soft); color: #1d435f; }
 
 /* ---------- Achievements ---------- */
 .achievements { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
